@@ -1,0 +1,20 @@
+{
+    "maps": [
+        {
+            "fileName": "maps/start.tmx",
+            "height": 480,
+            "width": 640,
+            "x": 0,
+            "y": 0
+        },
+        {
+            "fileName": "maps/cityview.tmx",
+            "height": 480,
+            "width": 2240,
+            "x": 0,
+            "y": -560
+        }
+    ],
+    "onlyShowAdjacentMaps": false,
+    "type": "world"
+}

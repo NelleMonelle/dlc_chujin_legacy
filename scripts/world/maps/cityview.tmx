@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.11" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="56" height="12" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="11">
+ <editorsettings>
+  <export target="cityview.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="music" value="deltarune/wind_highplace"/>
+  <property name="name" value="Dark World - City View"/>
+ </properties>
+ <tileset firstgid="1" source="../tilesets/mainarea.tsx"/>
+ <objectgroup id="7" name="objects_bg">
+  <object id="4" name="bg_fountain" x="0" y="0">
+   <point/>
+  </object>
+ </objectgroup>
+ <imagelayer id="2" name="bg" offsetx="160" offsety="0" parallaxx="0.8" repeatx="1">
+  <image source="../../../assets/sprites/world/maps/cityscape_bg.png" width="640" height="526"/>
+ </imagelayer>
+ <imagelayer id="6" name="bg_fg" offsetx="160" offsety="0" parallaxx="0.9" repeatx="1">
+  <image source="../../../assets/sprites/world/maps/cityscape_fg.png" width="640" height="526"/>
+ </imagelayer>
+ <layer id="1" name="Tile Layer 1" width="56" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,15,15,15,15,15,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,15,15,15,15,15,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,15,15,15,15,15,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,15,15,15,15,15,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,15,15,15,15,15,
+0,0,0,0,0,0,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,14,15,15,15,15,15,
+0,0,0,0,0,0,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,14,15,15,15,15,15,
+0,0,0,0,0,0,11,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,14,15,15,15,15,15,
+0,0,0,0,0,0,11,12,12,31,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,22,14,15,15,15,15,15,
+0,0,0,0,0,0,11,12,12,13,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,14,15,15,15,15,15,
+0,0,0,0,0,0,11,12,12,13,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,14,15,15,15,15,15,
+0,0,0,0,0,0,11,12,12,13,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,14,15,15,15,15,15
+</data>
+ </layer>
+ <objectgroup id="3" name="collision">
+  <object id="1" x="400" y="360" width="1600" height="120"/>
+  <object id="2" x="200" y="160" width="40" height="320"/>
+  <object id="3" x="240" y="160" width="1760" height="40"/>
+  <object id="10" x="2000" y="160" width="40" height="320"/>
+ </objectgroup>
+ <objectgroup id="4" name="objects">
+  <object id="6" name="transition" x="240" y="480" width="160" height="40">
+   <properties>
+    <property name="map" value="start"/>
+    <property name="marker" value="up"/>
+   </properties>
+  </object>
+  <object id="7" name="savepoint" x="200" y="260" width="40" height="40">
+   <properties>
+    <property name="text1" value="* A large city is seen at the horizon."/>
+    <property name="text2" value="* You're filled with the power of far travels."/>
+   </properties>
+  </object>
+  <object id="9" name="script" x="1720" y="200" width="40" height="160">
+   <properties>
+    <property name="cutscene" value="beginning.dead_end"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="markers">
+  <object id="5" name="down" x="320" y="440">
+   <point/>
+  </object>
+  <object id="8" name="spawn" x="280" y="280">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

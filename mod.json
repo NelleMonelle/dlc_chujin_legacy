@@ -1,0 +1,27 @@
+{
+    "id": "dlc_chujin_legacy",
+    "name": "A one's Legacy",
+    "subtitle": "",
+    "creator": "NelleMonelle",
+
+    "version": "v1.0.0",
+    "engineVer": "v0.10.0-dev",
+
+    "chapter": 2,
+
+    "map": "start",
+
+    "party": ["hero", "susie", "ceroba"],
+
+    "hardReset": false,
+
+    "hidden": false,
+
+    "setWindowTitleAndIcon": null,
+
+    "dlc": {
+        "extraBinCodes": {},
+        "worldMap": {},
+        "bosses": {}
+    }
+}
