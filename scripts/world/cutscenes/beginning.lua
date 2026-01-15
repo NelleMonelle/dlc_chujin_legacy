@@ -170,6 +170,11 @@ return {
 		        }})
                 cutscene:text("* That's...[wait:5] A lot to take in.", "surprised", "ceroba")
                 cutscene:text("* If any of that...[wait:5] Is true,[wait:5] that is.", "suspicious", "ceroba")
+				if Game:hasPartyMember("jamm") then
+					cutscene:text("* From what I've seen,[wait:5] it is...", "neutral", "jamm")
+					cutscene:text("* I've seen a bunch of these worlds as well.", "neutral", "jamm")
+					cutscene:text("* They're... truly amazing.", "relief", "jamm")
+				end
             end)
         end
         cutscene:interpolateFollowers()
