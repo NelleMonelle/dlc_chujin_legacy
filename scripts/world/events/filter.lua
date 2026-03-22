@@ -9,13 +9,30 @@ function event:init(data)
     if data.shape ~= "point" then
         self:addFX(MaskFX(self))
     end
+    Game.world.filter = self
 end
 
 function event:onAdd(parent)
     super.onAdd(self, parent)
 
     -- I'm too lazy to add a seperate overlay object layer on every map it appears in
-    self.layer = WORLD_LAYERS["top"] + 100
+    if Game.battle then
+        self.layer = BATTLE_LAYERS["top"] + 100
+    else
+        self.layer = WORLD_LAYERS["top"] + 100
+    end
+end
+
+function event:onRemoveFromStage(stage)
+    super.onRemoveFromStage(self, stage)
+    if self.parent and self.parent:includes(Battle) and Game.world then
+        local x, y = self:getScreenPos()
+        self:setParent(Game.world)
+        self:setScreenPos(x, y)
+		Game.world.filter = self
+    else
+        Game.world.filter = nil
+    end
 end
 
 function event:drawMask()
